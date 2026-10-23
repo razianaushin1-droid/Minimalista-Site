@@ -145,6 +145,25 @@
   .w .wv{font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:-.02em}
   .w .ws{font-size:.78rem;color:var(--faint)}
 
+  /* Glow look */
+  .glow-mock{position:relative;max-width:300px;margin:0 auto;aspect-ratio:9/18.5;border-radius:38px;padding:22px 18px;overflow:hidden;
+    background:#120f14;border:1px solid var(--line);box-shadow:0 30px 80px -30px rgba(0,0,0,.6);display:flex;flex-direction:column;gap:14px}
+  .glow-mock::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(70% 45% at 95% 0%,rgba(244,170,60,.55),transparent 70%),radial-gradient(60% 40% at 0% 55%,rgba(200,70,110,.32),transparent 70%)}
+  .glow-mock > *{position:relative}
+  .gm-chip{align-self:flex-start;font-size:.62rem;color:#f5f5f6;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:5px 11px;background:rgba(255,255,255,.06)}
+  .gm-clock{text-align:center;font-family:var(--display);font-weight:200;font-size:3.4rem;letter-spacing:-.03em;color:#fff;line-height:1;margin-top:8px}
+  .gm-date{text-align:center;font-size:.62rem;color:#c9c3cc;margin-top:-6px}
+  .gm-card{border-radius:20px;padding:12px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#f5f5f6;font-size:.7rem}
+  .gm-card small{display:block;color:#a9a2ad;font-size:.56rem;letter-spacing:.06em;margin-bottom:3px}
+  .gm-card b{font-size:1.25rem;font-weight:300}
+  .gm-run{display:flex;align-items:center;justify-content:space-between}
+  .gm-run i{font-style:normal;font-weight:700;color:#1a1208;background:linear-gradient(90deg,#f8b84e,#ef7d55);border-radius:999px;padding:5px 12px;font-size:.62rem}
+  .gm-search{margin-top:auto;height:36px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;padding:0 14px;font-size:.62rem;color:#a9a2ad}
+  .modes{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .mode{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--muted)}
+  .mode i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:middle}
+
   /* split showcase */
   .showcase{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
   @media(max-width:900px){.showcase{grid-template-columns:1fr;gap:32px}}
@@ -204,6 +223,7 @@
     <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#widgets">Widgets</a>
+      <a href="#glow">Glow</a>
       <a href="#looks">Looks</a>
       <a href="#privacy">Privacy</a>
     </div>
@@ -301,7 +321,7 @@
       <div class="card">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h7"/></svg></div>
         <h3>All apps, one swipe</h3>
-        <p>Swipe up for the full A–Z drawer with a fast‑scroll rail. Long‑press an app to drag it straight into a home folder.</p>
+        <p>Swipe up from the dock or the search bar for the full A–Z drawer with a fast‑scroll rail. Long‑press an app to drag it straight into a home folder.</p>
       </div>
       <div class="card">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div>
@@ -356,13 +376,79 @@
   </div>
 </section>
 
+<!-- GLOW -->
+<section id="glow">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">New in 2.0 · Two looks</span>
+      <h2>Meet Glow: a home screen that follows your day.</h2>
+      <p>Choose between <b>Classic</b>, the quiet look Minimalista started with, and <b>Glow</b>, with frosted glass and soft light. Both looks are free and do the same things. Switch anytime in Settings.</p>
+    </div>
+    <div class="showcase">
+      <div>
+        <ul class="flist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Colours that follow your day</b> — Glow shifts gently from morning to day, focus, wind‑down and bedtime.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>It learns your rhythm</b> — after a week it knows roughly when your mornings start and your evenings slow down. All on your phone.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Focus Score</b> — today compared with your usual day by this time. Tap it for your week.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>A card for right now</b> — start a focus session before your next event, see the time left, or wind down with your alarm and lights‑out time.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Your week</b> — screen time, focus sessions and your calmest day, with a card you can share if you want to.</span></li>
+        </ul>
+        <div class="modes">
+          <span class="mode"><i style="background:#f6c35b"></i>Morning</span>
+          <span class="mode"><i style="background:#a98bff"></i>Day</span>
+          <span class="mode"><i style="background:#6f7dff"></i>Focus</span>
+          <span class="mode"><i style="background:#f39a4f"></i>Wind‑down</span>
+          <span class="mode"><i style="background:#c85a7c"></i>Bedtime</span>
+        </div>
+      </div>
+      <div aria-hidden="true">
+        <div class="glow-mock">
+          <span class="gm-chip">☾ Wind‑down</span>
+          <div class="gm-clock">22:41</div>
+          <div class="gm-date">Monday, 19 October · 10°</div>
+          <div class="gm-card"><small>PHONE TIME TODAY</small><b>2h 05m</b> · 18% under your normal</div>
+          <div class="gm-card gm-run"><span>Wind down<br><small style="margin:0">2 steps</small></span><i>Run</i></div>
+          <div class="gm-search">Tap to search</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY TOOLS -->
+<section id="day">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">New in 2.0 · Your day, handled</span>
+      <h2>One tap for the routines you repeat, and calm in the car.</h2>
+    </div>
+    <div class="grid g-3">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></div>
+        <h3>Routines</h3>
+        <p>Bundle a few steps into one tap: start a focus session, silence the phone, hold notifications, resume your music, open an app. Glow suggests the right routine at the right time, and Undo takes it all back.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14M6 17l1.5-6h9L18 17M7 17v2M17 17v2"/></svg></div>
+        <h3>Driving mode</h3>
+        <p>When your car's Bluetooth connects, home becomes big music controls, Maps and Call. Notifications can wait until you park. Tap “I'm a passenger” to skip it.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></div>
+        <h3>Reply from your Digest</h3>
+        <p>Messages held by Quiet Digest can be answered right there, with Android's suggested replies, without opening the app and getting pulled in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- LOOKS -->
 <section id="looks">
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Make it yours</span>
       <h2>Ten wallpapers you can't get anywhere else — plus your own.</h2>
-      <p>Every wallpaper is generated on‑device and retints itself for each theme. Prefer a photo? Pick one from your gallery. Then choose a clock face and a mood.</p>
+      <p>In the Classic look, every wallpaper is generated on‑device and retints itself for each theme. Prefer a photo? Pick one from your gallery. Then choose a clock face and a mood.</p>
     </div>
 
     <div class="showcase">
@@ -377,7 +463,8 @@
         <ul class="flist">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>10 generated styles</b> — Aurora, Dunes, Mesh, Topography, Waves, Grid and more.</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Custom from gallery</b> — use your own photo, light and dark aware.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Four moods</b> — Dark, Light, Sun and Focus retint the whole UI.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Classic themes</b> — Dark, Light, Sun, Focus, OLED and more retint the whole UI.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Glow tints</b> — Violet, Amber, Ocean and Light, with Glow’s own living backdrop.</span></li>
         </ul>
       </div>
       <div>
@@ -407,7 +494,7 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5"/></svg><span><b>Time's up</b> — per‑app daily goals that actually hold, with a calm pause screen.</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2 2"/></svg><span><b>Mindful Open</b> — pick a reason before an app opens.</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12c4-6 12-6 16 0M4 12c4 6 12 6 16 0"/></svg><span><b>Scroll Break</b> — one breath when you reopen an app on repeat.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v12H4zM4 7l8 6 8-6"/></svg><span><b>Quiet Digest</b> — chosen notifications wait for your summary times.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v12H4zM4 7l8 6 8-6"/></svg><span><b>Quiet Digest</b> — chosen notifications wait for your summary times, and you can reply from the Digest.</span></li>
       </ul>
     </div>
     <div class="card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;padding:38px">
@@ -429,12 +516,12 @@
       <div>
         <span class="eyebrow">Private by default</span>
         <h2 style="font-size:2rem;margin-top:12px">Your phone is yours. We hold none of it.</h2>
-        <p style="color:var(--muted);margin-top:14px">No sign‑up, no ads, no advertising trackers, and no servers of our own. Your settings, folders, notes and tasks never leave the device. The only things that go out are a weather lookup, anonymous crash reports, and anonymous feature usage you can switch off — nothing tied to you.</p>
+        <p style="color:var(--muted);margin-top:14px">No sign‑up, no ads, no advertising trackers, and no servers of our own. Your settings, folders, notes and tasks never leave the device. Your Focus Score, your week and the rhythm Glow learns are all worked out on your phone. The only things that go out are a weather lookup, anonymous crash reports, and anonymous feature usage you can switch off — nothing tied to you.</p>
       </div>
       <ul class="plist">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg><div><b>On‑device storage</b><span>Everything is stored privately on your phone.</span></div></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8" opacity="0"/><path d="m8 12 3 3 5-6"/></svg><div><b>No accounts, no ads</b><span>Nothing to log into. Nothing selling your attention.</span></div></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg><div><b>Optional permissions</b><span>Weather, contacts, calendar — each powers one feature, and each is optional.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg><div><b>Optional permissions</b><span>Weather, contacts, calendar, usage access, nearby devices for Driving mode: each powers one feature, and each is optional.</span></div></li>
       </ul>
     </div>
     <div style="margin-top:34px">
@@ -466,7 +553,7 @@
     </div>
     <div style="display:grid;gap:8px">
       <a href="https://razianaushin1-droid.github.io/Minimalista-Launcher">Privacy policy</a>
-      <a href="https://razianaushin1-droid.github.io/Minimalista-Data-Deletion">Data deletion</a>
+      <a href="https://razianaushin1-droid.github.io/Minimalista-Data-deletion">Data deletion</a>
       <a href="mailto:lunarsprintapps@gmail.com">lunarsprintapps@gmail.com</a>
     </div>
     <p class="mono">© 2026 Lunar Sprint.<br>Weather by Open‑Meteo.</p>

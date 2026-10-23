@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minimalista Feature Graphic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root{
+    --bg:#0b0b0d; --surface:#141418; --line:#26262e;
+    --text:#f5f5f6; --muted:#a7a7b1; --faint:#6e6e78;
+    --accent:#c3f53c; --accent-ink:#12140a;
+    --display:"Bricolage Grotesque",-apple-system,sans-serif;
+    --body:"Instrument Sans",-apple-system,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#141418;color:var(--text);font-family:var(--body);
+    display:flex;flex-direction:column;align-items:center;gap:14px;padding:22px}
+  .hint{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.04em;text-align:center}
+  .hint b{color:var(--accent);font-weight:500}
+  .frame{overflow:auto;max-width:100%;border-radius:10px}
+
+  /* ---- the exact 1024x500 export stage ---- */
+  .stage{position:relative;width:1024px;height:500px;overflow:hidden;background:var(--bg);
+    display:flex;align-items:center}
+  .stage::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(42% 90% at 88% -6%, color-mix(in srgb,var(--accent) 30%,transparent), transparent 62%),
+      radial-gradient(30% 60% at 4% 108%, color-mix(in srgb,var(--accent) 12%,transparent), transparent 70%);}
+  .stage::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:44px 44px;opacity:.16;
+    -webkit-mask-image:radial-gradient(70% 120% at 20% 50%,#000 30%,transparent 75%);
+            mask-image:radial-gradient(70% 120% at 20% 50%,#000 30%,transparent 75%)}
+
+  .copy{position:relative;z-index:2;padding:0 0 0 66px;max-width:600px}
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+  .logo{width:40px;height:40px;border-radius:12px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center}
+  .logo svg{width:23px;height:23px}
+  .brand b{font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:-.02em}
+  .stage h1{font-family:var(--display);font-weight:800;letter-spacing:-.03em;
+    font-size:3.55rem;line-height:1.02;margin:0}
+  .stage h1 .dim{color:var(--muted)}
+  .sub{margin:20px 0 0;color:var(--muted);font-size:1.28rem;max-width:19ch;line-height:1.35}
+  .sub b{color:var(--text);font-weight:600}
+  .pill{display:inline-flex;align-items:center;gap:9px;margin-top:30px;
+    background:var(--accent);color:var(--accent-ink);font-weight:700;font-family:var(--display);
+    font-size:1.02rem;padding:11px 20px;border-radius:999px}
+  .pill svg{width:18px;height:18px}
+  .pill small{font-family:var(--mono);font-weight:500;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+
+  /* ---- phone bleeding off the right ---- */
+  .phone{position:absolute;z-index:1;right:56px;top:50%;transform:translateY(-50%) rotate(6deg);
+    width:262px;height:540px;border-radius:40px;padding:11px;
+    background:linear-gradient(160deg,#2b2b32,#0e0e12);box-shadow:0 40px 90px -30px rgba(0,0,0,.8)}
+  .screen{position:relative;height:100%;border-radius:30px;overflow:hidden;background:#0b0b0d;
+    display:flex;flex-direction:column;padding:24px 18px 16px}
+  .screen::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 30% at 22% 4%,rgba(195,245,60,.12),transparent 70%)}
+  .rings{position:absolute;right:18px;top:52px;display:flex;flex-direction:column;gap:8px}
+  .rings span{font-size:.46rem;color:var(--faint);letter-spacing:.14em;text-align:center;display:block;margin-top:1px}
+  .clk{display:flex;flex-direction:column;align-items:center;gap:5px;margin:2px auto 0}
+  .clk .d{font-family:var(--mono);font-size:.56rem;color:var(--muted)}
+  .fold{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:24px 4px 0}
+  .f{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .f .s{width:42px;height:42px;border-radius:13px;background:rgba(120,120,135,.22);display:grid;place-items:center;position:relative}
+  .f .s svg{width:20px;height:20px;color:var(--muted)}
+  .f .c{position:absolute;right:5px;bottom:4px;font-size:.48rem;font-weight:700;color:var(--text);font-family:var(--mono)}
+  .f .n{font-size:.56rem;color:var(--muted)}
+  .dock{margin-top:auto;display:flex;justify-content:space-between;padding:0 4px 2px}
+  .dock i{width:30px;height:30px;border-radius:9px;background:rgba(120,120,135,.24)}
+  .sechand{transform-origin:100px 100px;animation:spin 60s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion: reduce){.sechand{animation:none}}
+</style>
+</head>
+<body>
+<p class="hint">Feature graphic — <b>1024 × 500</b>. Screenshot the framed area below (crop to the outer edge) and upload the PNG to Play Console.</p>
+
+<div class="frame">
+  <div class="stage">
+    <div class="copy">
+      <div class="brand">
+        <span class="logo"><svg viewBox="0 0 24 24" fill="none"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" fill="currentColor"/></svg></span>
+        <b>Minimalista</b>
+      </div>
+      <h1>A calmer<br>home screen.</h1>
+      <p class="sub"><b>Folders. Widgets. Focus.</b> Private by default — no ads, no accounts.</p>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3.5v17l14-8.5-14-8.5Z"/></svg><span><small style="display:block">Coming soon on</small>Google Play</span></span>
+    </div>
+
+    <div class="phone" aria-hidden="true"><div class="screen">
+      <div class="rings">
+        <div><svg width="30" height="30" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" fill="none" stroke="#3a3a42" stroke-width="3"/><circle cx="18" cy="18" r="15" fill="none" stroke="#c3f53c" stroke-width="3" stroke-linecap="round" stroke-dasharray="63 94" transform="rotate(-90 18 18)"/><text x="18" y="21" text-anchor="middle" font-size="8" fill="#f5f5f6" font-family="monospace" font-weight="700">67</text></svg><span>YEAR</span></div>
+        <div><svg width="30" height="30" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" fill="none" stroke="#3a3a42" stroke-width="3"/><circle cx="18" cy="18" r="15" fill="none" stroke="#e9e9ee" stroke-width="3" stroke-linecap="round" stroke-dasharray="23 94" transform="rotate(-90 18 18)"/><text x="18" y="21" text-anchor="middle" font-size="8" fill="#f5f5f6" font-family="monospace" font-weight="700">24</text></svg><span>DAY</span></div>
+      </div>
+      <div class="clk">
+        <svg width="118" height="118" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="86" fill="none" stroke="#c3f53c" stroke-width="4" opacity=".85"/>
+          <g stroke="#6e6e78" stroke-width="3" stroke-linecap="round"><line x1="100" y1="22" x2="100" y2="36"/><line x1="178" y1="100" x2="164" y2="100"/><line x1="100" y1="178" x2="100" y2="164"/><line x1="22" y1="100" x2="36" y2="100"/></g>
+          <line id="fgHour" x1="100" y1="100" x2="100" y2="64" stroke="#f5f5f6" stroke-width="6" stroke-linecap="round"/>
+          <line id="fgMin" x1="100" y1="100" x2="100" y2="46" stroke="#f5f5f6" stroke-width="5" stroke-linecap="round"/>
+          <line id="fgSec" x1="100" y1="112" x2="100" y2="40" stroke="#c3f53c" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="100" cy="100" r="6" fill="#c3f53c"/>
+        </svg>
+        <span class="d" id="fgDate">Thursday, 3 September</span>
+      </div>
+      <div class="fold">
+        <div class="f"><span class="s"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6Z"/></svg><i class="c">1</i></span><span class="n">Studio</span></div>
+        <div class="f"><span class="s"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6Z"/></svg><i class="c">2</i></span><span class="n">Media</span></div>
+        <div class="f"><span class="s"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6Z"/></svg><i class="c">8</i></span><span class="n">Tools</span></div>
+        <div class="f"><span class="s"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6Z"/></svg><i class="c">5</i></span><span class="n">More</span></div>
+      </div>
+      <div class="dock"><i></i><i></i><i></i><i></i><i></i></div>
+    </div></div>
+  </div>
+</div>
+<script>
+  (function () {
+    function tick() {
+      var n = new Date();
+      var h = n.getHours() % 12, m = n.getMinutes(), s = n.getSeconds();
+      var set = function (id, deg) {
+        var el = document.getElementById(id);
+        if (el) el.setAttribute('transform', 'rotate(' + deg + ' 100 100)');
+      };
+      set('fgHour', h * 30 + m * 0.5);
+      set('fgMin', m * 6 + s * 0.1);
+      set('fgSec', s * 6);
+      var d = document.getElementById('fgDate');
+      if (d) d.textContent = n.toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' });
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+</script>
+</body>
+</html>
