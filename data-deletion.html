@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Minimalista — Data Deletion Request</title>
+<meta name="description" content="How to request deletion of your data for Minimalista, a private-by-default Android home-screen launcher. Everything is on-device; only anonymous crash reports are sent to Firebase Crashlytics." />
+<style>
+  :root{
+    --bg:#0b0b0d; --bg-2:#101014; --surface:#141418; --surface-2:#1b1b21;
+    --line:#26262e; --line-soft:#1e1e25;
+    --text:#f5f5f6; --muted:#a6a6b0; --faint:#6e6e78;
+    --accent:#c3f53c; --accent-soft:rgba(195,245,60,.14); --accent-ink:#12140a;
+    --r-lg:26px; --r-md:18px; --r-sm:12px;
+    --maxw:760px;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f4f4f0; --bg-2:#eeeeea; --surface:#ffffff; --surface-2:#f4f4ef;
+      --line:#e4e4dd; --line-soft:#eceae3;
+      --text:#161619; --muted:#55555f; --faint:#8b8b93;
+      --accent:#5b8c0a; --accent-soft:rgba(91,140,10,.12); --accent-ink:#ffffff;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:var(--sans);font-size:17px;line-height:1.68;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--accent);color:var(--accent-ink)}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line-soft)}
+  .hero::before{content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(52% 60% at 78% 8%, color-mix(in srgb,var(--accent) 22%, transparent), transparent 70%),
+      radial-gradient(40% 50% at 12% 0%, color-mix(in srgb,var(--accent) 12%, transparent), transparent 70%);}
+  .hero-inner{position:relative;max-width:var(--maxw);margin:0 auto;padding:60px 24px 46px}
+  .eyebrow{margin:0 0 14px;font-family:var(--mono);font-size:.8rem;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--accent)}
+  h1{margin:0;font-size:2.3rem;line-height:1.1;letter-spacing:-.02em;font-weight:800}
+  .sub{margin:18px 0 0;max-width:56ch;color:var(--muted);font-size:1.1rem;line-height:1.6}
+  section{padding:34px 0;border-bottom:1px solid var(--line-soft)}
+  h2{font-size:1.15rem;margin:0 0 12px;letter-spacing:-.01em}
+  p{margin:0 0 14px;color:var(--muted)}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:20px 22px;margin:16px 0}
+  ul{margin:6px 0 0;padding-left:0;list-style:none}
+  li{position:relative;padding:6px 0 6px 22px;color:var(--muted)}
+  li::before{content:"";position:absolute;left:2px;top:15px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  strong{color:var(--text)}
+  .btn{display:inline-block;margin-top:6px;background:var(--accent);color:var(--accent-ink);
+    font-weight:700;padding:14px 22px;border-radius:50px;text-decoration:none}
+  .mono{font-family:var(--mono);font-size:.92rem;color:var(--text)}
+  footer{padding:30px 0 60px;color:var(--faint);font-size:.9rem}
+  footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Minimalista</p>
+      <h1>Data deletion request</h1>
+      <p class="sub">Minimalista is private by default — no accounts, and almost everything stays on your device. Here's exactly how to delete anything it holds.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>What data exists</h2>
+      <p>Minimalista has <strong>no user accounts</strong> and runs no servers of its own. Your settings, categories, favourites, dock, notes, tasks, widgets, routines, Driving mode settings (including the car you chose), the daily rhythm the app learns, your Focus-session minutes, and any notifications waiting for delivery (from Quiet Digest or Driving mode) all live in the app's private storage <strong>on your device</strong>. The only things that leave your phone and are retained are:</p>
+      <div class="card">
+        <p style="margin:0"><strong>Anonymous crash &amp; diagnostic reports</strong> sent to <strong>Firebase Crashlytics</strong> (Google) to help fix bugs — a stack trace, app version, device model, OS version and a random installation ID. It is <strong>not linked to your identity</strong> and contains none of your notes, contacts, messages or screen contents.</p>
+        <p style="margin:12px 0 0"><strong>Anonymous usage statistics</strong> sent to <strong>Firebase Analytics</strong> (Google) — which features are used, with a random app-instance ID. No app names, contacts, notifications or anything you type, and no advertising ID. Turn it off anytime in <strong>Settings → Privacy → Share anonymous usage</strong>; uninstalling the app or clearing its data resets the random ID, so past statistics can no longer be tied to your device.</p>
+      </div>
+      <p>Weather requests (your approximate location or a city you type) are sent to Open‑Meteo only to fetch a forecast and are <strong>not stored</strong>, so there is nothing to delete there.</p>
+    </section>
+
+    <section>
+      <h2>Cancel a subscription</h2>
+      <p>Deleting data or uninstalling does <strong>not</strong> cancel a Premium subscription. Cancel it in the <strong>Google Play Store → Profile → Payments &amp; subscriptions → Subscriptions → Minimalista → Cancel subscription</strong>. You keep Premium until the end of the period you paid for. The 7‑day free trial needs nothing cancelled, and the lifetime purchase is a one‑time payment.</p>
+    </section>
+
+    <section>
+      <h2>Delete on‑device data yourself (instant)</h2>
+      <ul>
+        <li><strong>Clear app data:</strong> Android Settings → Apps → Minimalista → Storage → <strong>Clear storage</strong>. This erases all settings, notes, tasks, routines, learned rhythm and cached data immediately (including any share images saved in the cache).</li>
+        <li><strong>Uninstall Minimalista</strong> to remove everything the app stored.</li>
+        <li><strong>Revoke permissions</strong> anytime in Android Settings → Apps → Minimalista → Permissions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Delete crash‑report and usage‑statistics data</h2>
+      <p>Crash reports are anonymous and <strong>auto‑expire (typically within 90 days)</strong> under Firebase's data‑retention policy. Usage statistics are anonymous too: turn them off anytime in Settings → Privacy → Share anonymous usage, and clearing the app's data or uninstalling resets the random ID they're tied to. To request earlier deletion of any crash or usage data associated with your app installation, email us and we'll remove it:</p>
+      <p><a class="btn" href="mailto:lunarsprintapps@gmail.com?subject=Minimalista%20data%20deletion%20request">Request data deletion</a></p>
+      <p style="margin-top:14px">Or email <span class="mono">lunarsprintapps@gmail.com</span> with the subject “Data deletion request”. Because crash reports are anonymous and not tied to your identity, you don't need to provide any personal details; mentioning your device model and roughly when the issue happened helps us locate the reports. We respond within <strong>30 days</strong>.</p>
+    </section>
+
+    <footer class="wrap">
+      <p>See also the <a href="privacy-policy.html">Minimalista Privacy Policy</a>. Weather data by Open‑Meteo.com.</p>
+      <p>Developer of record: <strong>Lunar Sprint</strong> · Dhaka, Bangladesh · <a href="mailto:lunarsprintapps@gmail.com">lunarsprintapps@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
