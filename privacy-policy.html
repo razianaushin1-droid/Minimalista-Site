@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Minimalista — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Minimalista, a private-by-default Android home-screen launcher. No accounts, no ads, no advertising trackers; on-device by default, with anonymous crash reporting via Firebase Crashlytics." />
+<meta name="color-scheme" content="dark light" />
+<style>
+  :root{
+    --bg:#0b0b0d; --bg-2:#101014; --surface:#141418; --surface-2:#1b1b21;
+    --line:#26262e; --line-soft:#1e1e25;
+    --text:#f5f5f6; --muted:#a6a6b0; --faint:#6e6e78;
+    --accent:#c3f53c; --accent-soft:rgba(195,245,60,.14); --accent-ink:#12140a;
+    --amber:#f4c14e;
+    --r-lg:26px; --r-md:18px; --r-sm:12px;
+    --maxw:820px;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f4f4f0; --bg-2:#eeeeea; --surface:#ffffff; --surface-2:#f4f4ef;
+      --line:#e4e4dd; --line-soft:#eceae3;
+      --text:#161619; --muted:#55555f; --faint:#8b8b93;
+      --accent:#5b8c0a; --accent-soft:rgba(91,140,10,.12); --accent-ink:#ffffff;
+      --amber:#b7791f;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:var(--sans);font-size:17px;line-height:1.68;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  ::selection{background:var(--accent);color:var(--accent-ink)}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line-soft)}
+  .hero::before{
+    content:"";position:absolute;inset:-40% 0 auto 0;height:620px;pointer-events:none;
+    background:
+      radial-gradient(52% 60% at 78% 8%, color-mix(in srgb,var(--accent) 22%, transparent), transparent 70%),
+      radial-gradient(40% 50% at 12% 0%, color-mix(in srgb,var(--accent) 12%, transparent), transparent 70%);
+    filter:saturate(1.1);
+  }
+  .hero-inner{position:relative;max-width:var(--maxw);margin:0 auto;padding:64px 24px 54px}
+  .brand{display:inline-flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.01em;font-size:1.05rem}
+  .brand .mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+    background:var(--accent);color:var(--accent-ink)}
+  .brand .mark svg{width:20px;height:20px}
+  .eyebrow{margin:38px 0 14px;font-family:var(--mono);font-size:.8rem;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--accent)}
+  h1{margin:0;font-size:clamp(2.5rem,7.5vw,4rem);line-height:1.02;letter-spacing:-.035em;font-weight:820}
+  h1 .dim{color:var(--muted)}
+  .sub{margin:20px 0 0;max-width:58ch;color:var(--muted);font-size:1.12rem;line-height:1.6}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;color:var(--faint);font-size:.9rem}
+  .meta b{color:var(--text);font-weight:600}
+
+  /* ---------- TOC ---------- */
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 4px}
+  .toc a{font-size:.83rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;
+    padding:7px 14px;transition:.18s}
+  .toc a:hover{color:var(--text);border-color:color-mix(in srgb,var(--accent) 55%,var(--line));
+    background:var(--accent-soft)}
+
+  /* ---------- At a glance ---------- */
+  .glance{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:36px 0 8px}
+  @media(min-width:640px){.glance{grid-template-columns:repeat(4,1fr)}}
+  .g-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:18px 18px 20px}
+  .g-card .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+    background:var(--accent-soft);color:var(--accent);margin-bottom:14px}
+  .g-card .ic svg{width:19px;height:19px}
+  .g-card h4{margin:0 0 3px;font-size:.98rem;font-weight:700;letter-spacing:-.01em}
+  .g-card p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.5}
+
+  /* ---------- Sections ---------- */
+  main{padding:22px 0 40px}
+  section{margin:52px 0}
+  .sec-head{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+  .sec-num{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
+    font-family:var(--mono);font-size:.82rem;font-weight:700;color:var(--accent);
+    background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+  h2{margin:0;font-size:1.55rem;letter-spacing:-.02em;font-weight:760}
+  h3{margin:26px 0 6px;font-size:1.06rem;font-weight:680;letter-spacing:-.01em}
+  p{margin:13px 0;color:var(--text)}
+  .lead{color:var(--muted)}
+  ul{margin:14px 0;padding-left:0;list-style:none}
+  li{position:relative;padding-left:26px;margin:9px 0;color:var(--text)}
+  li::before{content:"";position:absolute;left:4px;top:.66em;width:7px;height:7px;border-radius:50%;
+    background:var(--accent)}
+  a.link{color:var(--accent);border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent);
+    transition:.18s;padding-bottom:1px}
+  a.link:hover{border-bottom-color:var(--accent)}
+  code{font-family:var(--mono);font-size:.82em;background:var(--surface-2);border:1px solid var(--line);
+    border-radius:7px;padding:2px 7px;color:var(--muted);white-space:nowrap}
+
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 26px}
+  .card.accent{border-color:color-mix(in srgb,var(--accent) 42%,var(--line));
+    background:linear-gradient(180deg,var(--accent-soft),transparent 60%),var(--surface)}
+  .pill-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+  .pill{background:var(--surface-2);border:1px solid var(--line);border-radius:999px;
+    padding:6px 13px;font-size:.8rem;color:var(--muted);font-weight:500}
+
+  /* ---------- Permission list ---------- */
+  .perm{display:flex;gap:16px;padding:20px 0;border-top:1px solid var(--line-soft)}
+  .perm:first-child{border-top:0;padding-top:6px}
+  .perm .picon{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+    background:var(--surface-2);border:1px solid var(--line);color:var(--muted)}
+  .perm .picon svg{width:21px;height:21px}
+  .perm .body{flex:1;min-width:0}
+  .perm .top{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:3px}
+  .perm .name{font-weight:700;font-size:1.02rem;letter-spacing:-.01em}
+  .perm .why{margin:2px 0 4px;color:var(--text)}
+  .perm .where{margin:0;color:var(--faint);font-size:.9rem}
+  .tag{font-size:.68rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+    padding:4px 9px;border-radius:999px;white-space:nowrap}
+  .tag.local{background:var(--accent-soft);color:var(--accent)}
+  .tag.sent{background:color-mix(in srgb,var(--amber) 20%,transparent);color:var(--amber)}
+  .tag.opt{background:var(--surface-2);color:var(--faint)}
+
+  /* ---------- Data-safety table ---------- */
+  .ds{display:grid;gap:12px;margin-top:16px}
+  .ds-row{display:grid;grid-template-columns:1fr auto;gap:10px 18px;align-items:center;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);padding:14px 16px}
+  .ds-row .k{font-weight:600}
+  .ds-row .v{color:var(--accent);font-weight:700;font-size:.9rem}
+  .ds-row .v.no{color:var(--faint)}
+
+  hr.rule{border:0;height:1px;background:var(--line-soft);margin:0}
+
+  footer{border-top:1px solid var(--line-soft);margin-top:20px}
+  .foot-inner{max-width:var(--maxw);margin:0 auto;padding:34px 24px 60px;color:var(--faint);
+    font-size:.9rem;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+  .foot-inner a{color:var(--muted)}
+  .foot-inner a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="brand">
+        <span class="mark"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 4 7l8 5 8-5-8-5Zm0 20-8-5V9l8 5 8-5v8l-8 5Z"/></svg></span>
+        Minimalista
+      </span>
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Your data<br /><span class="dim">stays yours.</span></h1>
+      <p class="sub">Minimalista is a minimalist Android home-screen launcher, built to be private by default — no accounts, no ads, no advertising trackers, and no servers of our own. Almost everything happens on your device; the exceptions are weather requests, anonymous crash reports, and anonymous usage statistics you can turn off.</p>
+      <div class="meta">
+        <span>Effective&nbsp;<b>5 September 2026</b></span>
+        <span>Last updated&nbsp;<b>27 October 2026</b></span>
+        <span>App&nbsp;<b>com.minimalista.launcher</b></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <nav class="toc" aria-label="Sections">
+      <a href="#glance">At a glance</a>
+      <a href="#access">What we access</a>
+      <a href="#ondevice">On-device data</a>
+      <a href="#features">On-device features</a>
+      <a href="#purchases">Purchases</a>
+      <a href="#third">Third parties</a>
+      <a href="#safety">Data safety</a>
+      <a href="#rights">Your rights</a>
+      <a href="#retention">Retention</a>
+      <a href="#children">Children</a>
+      <a href="#changes">Changes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- glance cards -->
+    <section id="glance" style="margin-top:8px">
+      <div class="glance">
+        <div class="g-card">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+          <h4>No accounts</h4><p>Nothing to sign up for. Just install and go.</p>
+        </div>
+        <div class="g-card">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><path d="m1 1 22 22"/></svg></span>
+          <h4>No ad tracking</h4><p>No ads, no advertising IDs, no cross-app tracking.</p>
+        </div>
+        <div class="g-card">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M12 18h.01"/></svg></span>
+          <h4>On-device</h4><p>Your data lives in the app’s private storage.</p>
+        </div>
+        <div class="g-card">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <h4>You’re in control</h4><p>Every permission is optional and revocable.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="card accent" style="margin-top:6px">
+      <p style="margin:0"><strong>The short version.</strong> Three things leave your phone, all over encrypted (HTTPS) connections: a <strong>weather request</strong> — your approximate location or a city name you type — sent to Open-Meteo for a forecast; <strong>anonymous crash reports</strong> sent to Firebase Crashlytics (Google) so we can fix bugs; and <strong>anonymous usage statistics</strong> (which features are used) sent to Firebase Analytics (Google), which you can turn off in Settings → Privacy. We run no servers of our own and never sell your data or share the contents of your notes, contacts, or screens.</p>
+      <div class="pill-row">
+        <span class="pill">No ads</span>
+        <span class="pill">No data selling</span>
+        <span class="pill">No ad trackers</span>
+        <span class="pill">HTTPS only</span>
+        <span class="pill">Anonymous crash reports</span>
+      </div>
+    </div>
+
+    <main>
+      <!-- 0 who -->
+      <section id="who">
+        <div class="sec-head"><span class="sec-num">§</span><h2>Who this applies to</h2></div>
+        <p class="lead">This Privacy Policy governs the <strong>Minimalista</strong> Android application (package <code>com.minimalista.launcher</code>) and describes what the app can access, why, and where — if anywhere — that information goes. “We”, “us”, and “the app” refer to Minimalista and its developer, the data controller for the limited processing described here.</p>
+      </section>
+
+      <!-- 1 access -->
+      <section id="access">
+        <div class="sec-head"><span class="sec-num">1</span><h2>What the app accesses, and why</h2></div>
+        <p class="lead">Every item below is <strong>optional</strong> and tied to one feature. Decline any and the app still works — that feature just stays off. Grant or revoke each at any time in Android Settings, or from <em>Settings → Permissions</em> inside the app. Our legal basis (where GDPR applies) is your <strong>consent</strong>, given by granting the permission; for the app’s core launcher function it is our <strong>legitimate interest</strong> in providing the service you installed.</p>
+
+        <div class="card" style="margin-top:18px">
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Approximate location</span><code>ACCESS_COARSE_LOCATION</code><span class="tag sent">Sent to Open-Meteo</span></div>
+              <p class="why">Shows the current weather for where you are, under the clock and on the weather card.</p>
+              <p class="where">Coarse coordinates are sent to Open-Meteo to fetch a forecast. Not stored by us; not linked to any identity.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Weather city names you type</span><span class="tag sent">Sent to Open-Meteo</span></div>
+              <p class="why">Adds a weather card for a specific city.</p>
+              <p class="where">The city name is sent to Open-Meteo’s geocoding API to look up its coordinates.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Internet</span><code>INTERNET</code><span class="tag sent">Network</span></div>
+              <p class="why">Used to request weather forecasts from Open-Meteo and to upload crash reports.</p>
+              <p class="where">The app makes no other network calls.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4M12 17h.01"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Crash &amp; diagnostic reports</span><span class="tag sent">Sent to Firebase Crashlytics</span></div>
+              <p class="why">Detects and helps us fix crashes and stability issues.</p>
+              <p class="where">Sent to Firebase Crashlytics (Google): a stack trace, app version, device model, OS version, and a random Firebase installation ID. Never your notes, contacts, messages, or the contents of your screens; not linked to your identity.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Anonymous usage statistics</span><span class="tag sent">Sent to Firebase Analytics</span></div>
+              <p class="why">Shows us which features are used so we can improve them — for example, that onboarding was finished, the Classic or Glow home style was chosen, a widget type was added, a Premium screen was opened, or a feature was switched on.</p>
+              <p class="where">Sent to Firebase Analytics (Google) with a random app-instance ID, app version, device model, OS version, and approximate country. Never the names of your apps, your contacts, notifications, notes, or anything you type; no advertising ID. On by default — turn it off anytime in Settings → Privacy → Share anonymous usage.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2.5"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Calendar</span><code>READ_CALENDAR</code><span class="tag local">Stays on device</span></div>
+              <p class="why">Shows today’s events in the Events widget, and your next event on the Glow home screen’s Focus card.</p>
+              <p class="where">Read on your device only, while the widget is on screen. Never uploaded.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Usage access</span><code>PACKAGE_USAGE_STATS</code><span class="tag local">Stays on device</span></div>
+              <p class="why">Powers screen-time figures, the Screen-time widget, per-app usage goals, onboarding’s “guess vs. actual” reveal, the Focus Score, the weekly “Your week” summary, the suggested-app slot, the daily Time budget, and the daily rhythm Minimalista learns (roughly when your mornings start and your evenings wind down).</p>
+              <p class="where">All usage is computed and shown on your device. Never uploaded. The Focus Score and weekly summary are recalculated from Android’s own usage data each time they are shown. Minimalista keeps only the learned morning and evening times.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Notification access</span><code>BIND_NOTIFICATION_LISTENER_SERVICE</code><span class="tag local">Stays on device</span></div>
+              <p class="why">Powers Focus Mode’s notification filter (dismissing alerts from apps that aren’t allow-listed), shows / controls the media card, and — only if you turn on Quiet Digest — holds notifications from the apps you choose until your chosen delivery times. While Driving mode is on and set to hold notifications, it holds them from every app until you park. When a held message offers a reply, you can answer it from the Digest.</p>
+              <p class="where">Notifications are processed on your device only and never transmitted off it. With Quiet Digest on, the title and text of notifications from the apps you chose are kept in Minimalista’s private storage until you view or clear them, or turn Quiet Digest off. Nothing is kept for any other app, and Quiet Digest is off unless you turn it on. While Driving mode holds notifications, they are kept the same way and delivered when the car disconnects. A reply you write is handed straight to the app that sent the message, using Android’s own notification reply action. That app sends it, and Minimalista keeps no copy. Suggested replies come from Android, on your device.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="4" rx="1.5"/><rect x="4" y="9" width="16" height="12" rx="2"/><path d="M8 14h8"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Post notifications</span><code>POST_NOTIFICATIONS</code><span class="tag opt">Optional</span></div>
+              <p class="why">Lets Quiet Digest show its one summary notification at your chosen times, and lets the app show two reminders before your free trial ends. You can say no; the app works the same without it.</p>
+              <p class="where">The summary is created on your device. Nothing is sent anywhere.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Do Not Disturb access</span><span class="tag local">Stays on device</span></div>
+              <p class="why">Silences the device while a Focus session runs, or when a routine you run includes a “Silence” step.</p>
+              <p class="where">A device-only setting; nothing leaves your phone.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Nearby devices (Bluetooth)</span><code>BLUETOOTH_CONNECT</code><span class="tag local">Stays on device</span></div>
+              <p class="why">Powers Driving mode. You pick your car from your phone’s paired Bluetooth devices, and Minimalista switches to big driving controls when that car connects and back when it disconnects. Asked only when you set up Driving mode. On Android 11 and older the equivalent is the <code>BLUETOOTH</code> permission.</p>
+              <p class="where">Minimalista never scans for devices or connects to anything. It only reads the list of devices you have already paired, and checks whether the car you chose has connected or disconnected. The chosen car’s name and Bluetooth address are kept in the app’s private storage and never uploaded.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Contacts</span><code>READ_CONTACTS</code><span class="tag local">Stays on device</span></div>
+              <p class="why">Lets you search your contacts from the launcher’s universal search bar, and shows your starred contacts in the Favourites widget.</p>
+              <p class="where">Read on your device only. Never uploaded.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Installed apps</span><code>&lt;queries&gt; launcher apps</code><span class="tag local">Stays on device</span></div>
+              <p class="why">Lists, searches, categorises, and launches the apps on your phone — the core job of a launcher.</p>
+              <p class="where">No special permission: Minimalista only sees apps that appear in your app drawer (launchable apps). The list stays on your device.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 4l9 5.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/><path d="M9 21v-8h6v8"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Default home app (role)</span><span class="tag opt">On device</span></div>
+              <p class="why">Lets the Home button open Minimalista.</p>
+              <p class="where">A system role you grant in Android settings; no data is collected.</p>
+            </div>
+          </div>
+          <div class="perm">
+            <span class="picon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></svg></span>
+            <div class="body">
+              <div class="top"><span class="name">Billing</span><code>com.android.vending.BILLING</code><span class="tag sent">Google Play</span></div>
+              <p class="why">Offers Minimalista Premium — the yearly subscription and the one-time lifetime purchase. The 7-day free trial starts by itself when you finish setting up the app and needs no payment.</p>
+              <p class="where">Purchases are processed entirely by Google Play Billing. We never see or store your payment details. See “Purchases”.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 on-device -->
+      <section id="ondevice">
+        <div class="sec-head"><span class="sec-num">2</span><h2>Data you create stays on your device</h2></div>
+        <p>Your preferences, home drawers, favourites, dock, notes, to-do tasks, usage goals, Focus settings, widget data (such as your water count, habits and countdowns), Quiet Digest notifications waiting for delivery, your usage goals and Mindful Open / Scroll Break settings, wallpaper cache, your home style (Classic or Glow) and Glow tint, your learned daily rhythm (two times of day), the minutes you spent in Focus sessions each day, your routines, your Driving mode settings and chosen car, your Time budget (chosen apps, daily allowance and whether today’s extra five minutes was used), your Grayscale at night and Essential Mode settings, free-trial dates, and premium status are stored in Minimalista’s private app storage on your device. They are never uploaded to us — we operate no servers and have no way to receive them.</p>
+        <p>The pause screens keep even less: the reason you pick on Mindful Open is never saved, and Scroll Break’s count of recent app opens lives only in memory and is gone when the app closes. Quiet Digest’s delivery schedule is restored after your phone restarts (the standard <code>RECEIVE_BOOT_COMPLETED</code> permission); nothing is read or sent when that happens.</p>
+      </section>
+
+      <!-- 2b on-device features -->
+      <section id="features">
+        <div class="sec-head"><span class="sec-num">2b</span><h2>Features that work only on your device</h2></div>
+        <ul>
+          <li><strong>Focus Score, “Your week” and the learned rhythm.</strong> Built from usage access (see above) and calculated entirely on your phone. The Glow home screen uses the learned rhythm to change its colours through the day. Nothing is sent to us or to anyone else.</li>
+          <li><strong>Next alarm.</strong> The Glow home screen’s evening card shows the time of your next alarm, and the learned rhythm can use it as a hint for your bedtime. Android provides this to any app without a permission. It is read on the phone only.</li>
+          <li><strong>Routines.</strong> A routine runs steps you choose, all on your phone: start a Focus session, silence the phone, hold notifications, resume your music, or open an app.</li>
+          <li><strong>Time budget.</strong> You pick apps and a daily allowance; the minutes used are read from Android’s usage data on your phone. When the budget runs out, a pause screen appears. Nothing is uploaded.</li>
+          <li><strong>Grayscale at night and Essential Mode.</strong> These only change how Minimalista draws its own screens. They change no system settings and collect nothing.</li>
+          <li><strong>Trial reminders.</strong> If you allow notifications, the app schedules two local reminders on your phone before the free trial ends. They are not sent from any server.</li>
+          <li><strong>Sharing your week or your home.</strong> Nothing is shared unless you tap <em>Share</em>. The home card is a drawing of shapes in your colours; it never shows your app names, notifications or wallpaper photo. Then the card you see is saved as an image in the app’s temporary cache and handed to the app you pick from Android’s share sheet. That app’s own privacy policy applies to what you send through it.</li>
+          <li><strong>Voice search.</strong> The microphone button opens your phone’s speech-recognition service, for example Google’s. That service handles your voice under its own privacy policy. Minimalista has no microphone permission and receives only the recognised text, which it uses for that search and does not keep.</li>
+        </ul>
+      </section>
+
+      <!-- 3 purchases -->
+      <section id="purchases">
+        <div class="sec-head"><span class="sec-num">3</span><h2>Purchases (Minimalista Premium)</h2></div>
+        <p>Minimalista is free to use. Premium unlocks the widget board and customisation (themes, fonts, clocks, wallpapers and layout). The 7-day free trial starts automatically when you finish setting up the app: no payment method or Google account details are involved, and its dates are kept only on your device. When the trial ends, the launcher keeps working and your current look stays; only changing Premium features requires a plan.</p>
+        <p><strong>Cancelling.</strong> The trial needs nothing cancelled — it simply ends. A yearly subscription can be cancelled anytime in the <strong>Google Play Store → Profile → Payments &amp; subscriptions → Subscriptions → Minimalista → Cancel subscription</strong>; you keep Premium until the end of the period you paid for. Uninstalling the app does not cancel a subscription. The lifetime purchase is a one-time payment with nothing to cancel. Refunds are handled by Google Play under its refund policy.</p>
+        <p>Premium is sold through <strong>Google Play Billing</strong>. When you subscribe or buy the lifetime plan, <strong>Google</strong> — not Minimalista — handles the transaction and your payment method. We receive only the entitlement result (whether a plan is active), stored on your device to unlock premium features. Your card, billing address, and Google account details are never shared with us. Google’s handling of your purchase is governed by the <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      </section>
+
+      <!-- 4 third parties -->
+      <section id="third">
+        <div class="sec-head"><span class="sec-num">4</span><h2>Third-party services</h2></div>
+        <h3>Open-Meteo — weather</h3>
+        <p>Forecasts are provided by <a class="link" href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>. When you use weather, your approximate location or a typed city name is sent to Open-Meteo over HTTPS so it can return a forecast. Weather data is used under the <a class="link" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0 (CC BY 4.0)</a> license. See Open-Meteo’s <a class="link" href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">terms &amp; privacy</a>.</p>
+        <h3>Google Play</h3>
+        <p>App distribution and in-app purchases are handled by Google Play / Google Play Billing. See the <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <h3>Firebase Crashlytics — crash reporting</h3>
+        <p>To find and fix crashes, Minimalista uses <a class="link" href="https://firebase.google.com/products/crashlytics" target="_blank" rel="noopener">Firebase Crashlytics</a>, a crash-reporting service operated by Google. When the app crashes or hits a stability issue, it sends a report containing the stack trace, app version, device model, OS version, and a randomly-generated Firebase installation ID. It does <strong>not</strong> include your notes, contacts, messages, or the contents of your screens, and it is not linked to your identity. Reports are retained by Google per Firebase’s data-retention policy (typically up to 90 days). See the data Crashlytics collects at <a class="link" href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a> and the <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <h3>Firebase Analytics — anonymous usage statistics</h3>
+        <p>To understand which features help people, Minimalista uses <a class="link" href="https://firebase.google.com/products/analytics" target="_blank" rel="noopener">Firebase Analytics</a>, operated by Google. It records feature-level events (for example: an onboarding step reached, which home style is chosen, a widget type added, a Premium screen viewed, a purchase started or completed, a feature switched on, and which button was chosen on a pause screen) together with a random app-instance ID, app version, device model, OS version, and approximate country. It never records the names of your apps, your contacts, notifications, notes, typed reasons, or any other content you create. Advertising-ID collection and ad personalisation are disabled. You can turn it off anytime in <strong>Settings → Privacy → Share anonymous usage</strong>; Google retains this data per its <a class="link" href="https://support.google.com/analytics/answer/7667196" target="_blank" rel="noopener">data-retention settings</a>. See <a class="link" href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.</p>
+        <p class="lead" style="margin-top:14px">We use <strong>no</strong> advertising SDKs and <strong>no</strong> analytics for advertising. The only third-party SDKs that transmit data are Firebase Crashlytics and Firebase Analytics, described above, used solely for crash diagnostics and improving the app.</p>
+      </section>
+
+      <!-- 5 data safety -->
+      <section id="safety">
+        <div class="sec-head"><span class="sec-num">5</span><h2>Data collection &amp; sharing summary</h2></div>
+        <p class="lead">Aligned with the Google Play Data Safety section:</p>
+        <div class="ds">
+          <div class="ds-row"><span class="k">Data collected by us (on our servers)</span><span class="v no">None</span></div>
+          <div class="ds-row"><span class="k">Data shared or sold to data brokers</span><span class="v no">None</span></div>
+          <div class="ds-row"><span class="k">Data used for advertising or tracking</span><span class="v no">None</span></div>
+          <div class="ds-row"><span class="k">Location / city sent to Open-Meteo for weather</span><span class="v">Not stored, not linked to you</span></div>
+          <div class="ds-row"><span class="k">Crash &amp; diagnostic data sent to Firebase Crashlytics (Google)</span><span class="v">Anonymous, not linked to you</span></div>
+          <div class="ds-row"><span class="k">App interactions sent to Firebase Analytics (Google)</span><span class="v">Anonymous, optional — can be turned off</span></div>
+          <div class="ds-row"><span class="k">Encryption in transit</span><span class="v">Yes — HTTPS</span></div>
+          <div class="ds-row"><span class="k">You can request deletion</span><span class="v">Yes — clear data / uninstall</span></div>
+        </div>
+      </section>
+
+      <!-- 6 rights -->
+      <section id="rights">
+        <div class="sec-head"><span class="sec-num">6</span><h2>Your rights &amp; choices</h2></div>
+        <p>Because we hold none of your personal data on any server, most requests are satisfied directly on your device. Depending on where you live (e.g. the EEA/UK under <strong>GDPR</strong>, or California under <strong>CCPA/CPRA</strong>), you may have the right to access, correct, delete, or port your data, and to object to or restrict processing. For Minimalista:</p>
+        <ul>
+          <li><strong>Access &amp; portability</strong> — the only data that exists is on your device, under your control.</li>
+          <li><strong>Deletion</strong> — clear the app’s data or uninstall the app to remove everything (see “Retention”).</li>
+          <li><strong>Withdraw consent</strong> — revoke any permission anytime in Android Settings; the related feature stops immediately.</li>
+          <li><strong>No sale of data</strong> — we never sell or “share” personal information as those terms are defined under CCPA/CPRA.</li>
+          <li><strong>Non-discrimination</strong> — exercising any right never limits your use of the app.</li>
+        </ul>
+        <p>To exercise a right or ask a question, contact us below.</p>
+      </section>
+
+      <!-- 7 retention -->
+      <section id="retention">
+        <div class="sec-head"><span class="sec-num">7</span><h2>Data retention &amp; deletion</h2></div>
+        <p>We run no servers, so we retain none of your data ourselves. Everything Minimalista stores lives in its private on-device storage and is removed when you <strong>clear the app’s data</strong> or <strong>uninstall</strong> the app. You can revoke any permission at any time in Android Settings. Crash reports sent to Firebase Crashlytics are held by Google and retained per Firebase’s data-retention policy (typically up to 90 days), not linked to your identity.</p>
+        <p>To request deletion of crash-report data, or for any data-deletion question, see our <a class="link" href="data-deletion.html">Data Deletion Request</a> page or email <a class="link" href="mailto:lunarsprintapps@gmail.com">lunarsprintapps@gmail.com</a>.</p>
+      </section>
+
+      <!-- 8 security -->
+      <section id="security">
+        <div class="sec-head"><span class="sec-num">8</span><h2>Security</h2></div>
+        <p>Network requests (weather) use encrypted HTTPS connections. All other data is kept in the app’s private storage, protected by Android’s application sandbox. No security method is perfect, but because we transmit and store so little, the exposure surface is deliberately minimal.</p>
+      </section>
+
+      <!-- 9 children -->
+      <section id="children">
+        <div class="sec-head"><span class="sec-num">9</span><h2>Children’s privacy</h2></div>
+        <p>Minimalista is a general-purpose launcher and is not directed to children under 13 (or the equivalent minimum age in your jurisdiction). We do not knowingly collect personal information from children — in fact, we don’t knowingly collect personal information from anyone. If you believe a child has provided us information, contact us and we’ll address it.</p>
+      </section>
+
+      <!-- 10 international -->
+      <section id="international">
+        <div class="sec-head"><span class="sec-num">10</span><h2>International users</h2></div>
+        <p>Minimalista does not transfer your personal data internationally, because it does not collect it on any server of ours. Weather requests you initiate are sent directly from your device to Open-Meteo; crash reports and usage statistics are sent to Firebase (Google); and your purchases are processed by Google. These providers may process data on servers outside your country, governed by their own policies, linked above.</p>
+      </section>
+
+      <!-- 11 changes -->
+      <section id="changes">
+        <div class="sec-head"><span class="sec-num">11</span><h2>Changes to this policy</h2></div>
+        <p>If this policy changes, we’ll update this page and revise the “Last updated” date in the header. Material changes will be reflected here before they take effect. Continued use of the app after an update means you accept the revised policy.</p>
+      </section>
+
+      <!-- 12 contact -->
+      <section id="contact">
+        <div class="sec-head"><span class="sec-num">12</span><h2>Contact us</h2></div>
+        <div class="card">
+          <p style="margin:0 0 6px">Questions about privacy, or want to exercise a data right?</p>
+          <p style="margin:0;font-size:1.15rem;font-weight:700"><a class="link" href="mailto:lunarsprintapps@gmail.com">lunarsprintapps@gmail.com</a></p>
+          <p class="lead" style="margin:10px 0 0;font-size:.9rem">Developer of record: <strong>Lunar Sprint</strong> · <strong>Dhaka, Bangladesh</strong></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="foot-inner">
+      <span>© <span id="yr">2025</span> Minimalista. Private by default.</span>
+      <span>Weather by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0) · Built with Jetpack Compose</span>
+    </div>
+  </footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
