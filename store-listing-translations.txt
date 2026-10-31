@@ -59,7 +59,7 @@ Keine Konten, keine Werbung, keine eigenen Server. Deine Notizen, Kontakte, Mitt
 
 Verfügbar in 19 Sprachen.
 
-Datenschutzerklärung: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Datenschutzerklärung: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Neuer Look: Glow – ein Startbildschirm, dessen Farben deinem Tag folgen und deinen Rhythmus lernen. Klassisch bleibt, Wechsel jederzeit
@@ -132,7 +132,7 @@ Sin cuentas, sin anuncios, sin servidores propios. Tus notas, contactos, notific
 
 Disponible en 19 idiomas.
 
-Política de privacidad: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Política de privacidad: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Nuevo estilo: Glow, una pantalla de inicio cuyos colores siguen tu día y aprenden tu ritmo. Clásico sigue y puedes cambiar cuando quieras
@@ -205,7 +205,7 @@ Pas de compte, pas de pub, pas de serveurs à nous. Vos notes, contacts, notific
 
 Disponible en 19 langues.
 
-Politique de confidentialité : https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Politique de confidentialité : https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Nouveau look : Glow, un écran d'accueil dont les couleurs suivent votre journée et apprennent votre rythme. Classique reste, changez quand vous voulez
@@ -278,7 +278,7 @@ Nessun account, nessuna pubblicità, nessun server nostro. Note, contatti, notif
 
 Disponibile in 19 lingue.
 
-Informativa sulla privacy: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Informativa sulla privacy: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Nuovo stile: Glow, una home i cui colori seguono la giornata e imparano il tuo ritmo. Classico resta e puoi cambiare quando vuoi
@@ -351,7 +351,7 @@ Sem contas, sem anúncios, sem servidores próprios. Suas notas, contatos, notif
 
 Disponível em 19 idiomas.
 
-Política de privacidade: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Política de privacidade: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Novo visual: Glow, uma tela inicial cujas cores acompanham seu dia e aprendem seu ritmo. O Clássico continua, troque quando quiser
@@ -424,7 +424,7 @@ Geen accounts, geen advertenties, geen eigen servers. Je notities, contacten, me
 
 Beschikbaar in 19 talen.
 
-Privacybeleid: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Privacybeleid: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Nieuwe look: Glow, een startscherm waarvan de kleuren je dag volgen en je ritme leren. Klassiek blijft, wissel wanneer je wilt
@@ -497,7 +497,7 @@ Bez kont, bez reklam, bez własnych serwerów. Twoje notatki, kontakty, powiadom
 
 Dostępne w 19 językach.
 
-Polityka prywatności: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Polityka prywatności: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Nowy wygląd: Glow, ekran główny, którego kolory podążają za dniem i uczą się Twojego rytmu. Klasyczny zostaje, zmienisz go w każdej chwili
@@ -570,7 +570,7 @@ Hesap yok, reklam yok, kendi sunucumuz yok. Notların, kişilerin, bildirimlerin
 
 19 dilde kullanılabilir.
 
-Gizlilik politikası: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Gizlilik politikası: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Yeni görünüm: Glow, renkleri gününü takip eden ve ritmini öğrenen bir ana ekran. Klasik kalıyor, istediğin zaman geçiş yap
@@ -643,7 +643,7 @@ Tanpa akun, tanpa iklan, tanpa server milik kami. Catatan, kontak, notifikasi, s
 
 Tersedia dalam 19 bahasa.
 
-Kebijakan privasi: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Kebijakan privasi: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Tampilan baru: Glow, layar utama yang warnanya mengikuti harimu dan mempelajari ritmemu. Klasik tetap ada, ganti kapan saja
@@ -716,7 +716,7 @@ Không tài khoản, không quảng cáo, không máy chủ riêng. Ghi chú, da
 
 Có sẵn 19 ngôn ngữ.
 
-Chính sách quyền riêng tư: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Chính sách quyền riêng tư: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Giao diện mới: Glow, màn hình chính có màu theo nhịp ngày và học nhịp sống của bạn. Cổ điển vẫn còn, đổi bất cứ lúc nào
@@ -789,7 +789,7 @@ Minimalista и оба стиля бесплатны. Каждая новая у�
 
 Доступно на 19 языках.
 
-Политика конфиденциальности: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Политика конфиденциальности: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Новый стиль: Glow — главный экран, цвета которого следуют за днём и изучают ваш ритм. Классический остаётся, переключайтесь в любой момент
@@ -862,7 +862,7 @@ Minimalista та обидва стилі безкоштовні. Кожне но
 
 Доступно 19 мовами.
 
-Політика конфіденційності: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+Політика конфіденційності: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • Новий стиль: Glow — головний екран, кольори якого йдуть за днем і вивчають ваш ритм. Класичний лишається, перемикайтеся будь-коли
@@ -935,7 +935,7 @@ Minimalista ومظهراه مجانيان. يبدأ كل تثبيت جديد ب�
 
 متاح بـ19 لغة.
 
-سياسة الخصوصية: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+سياسة الخصوصية: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • مظهر جديد: Glow، شاشة رئيسية تتبع ألوانها يومك وتتعلّم إيقاعك. يبقى الكلاسيكي ويمكنك التبديل في أي وقت
@@ -1008,7 +1008,7 @@ Minimalista और दोनों लुक मुफ़्त हैं। ह
 
 19 भाषाओं में उपलब्ध।
 
-गोपनीयता नीति: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+गोपनीयता नीति: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • नया लुक: Glow, ऐसी होम स्क्रीन जिसके रंग आपके दिन के साथ चलते हैं और आपकी दिनचर्या सीखते हैं। क्लासिक भी है, कभी भी बदलें
@@ -1081,7 +1081,7 @@ Minimalista も2つのスタイルも無料です。新しくインストール�
 
 19言語に対応。
 
-プライバシーポリシー: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+プライバシーポリシー: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • 新スタイル Glow：1日に合わせて色が変わり、あなたのリズムを学ぶホーム画面。クラシックもそのまま、いつでも切り替え可能
@@ -1154,7 +1154,7 @@ Minimalista와 두 가지 모습 모두 무료입니다. 새로 설치하면 7�
 
 19개 언어 지원.
 
-개인정보처리방침: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+개인정보처리방침: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • 새 모습 Glow: 하루를 따라 색이 바뀌고 나의 리듬을 배우는 홈 화면. 클래식도 그대로, 언제든 전환
@@ -1227,7 +1227,7 @@ Minimalista 和两种外观都免费。每次新安装都会先享受 7 天 Prem
 
 支持 19 种语言。
 
-隐私政策: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+隐私政策: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • 全新外观 Glow：颜色跟随你的一天并学习你的节奏的主屏幕。经典外观保留，随时切换
@@ -1300,7 +1300,7 @@ Minimalista 和兩種外觀都免費。每次新安裝都會先享有 7 天 Prem
 
 支援 19 種語言。
 
-隱私權政策: https://razianaushin1-droid.github.io/Minimalista-Launcher/privacy-policy.html
+隱私權政策: https://razianaushin1-droid.github.io/Minimalista-Launcher/
 Release notes:
 Minimalista 2.0
 • 全新外觀 Glow：顏色跟著你的一天並學習你的節奏的主畫面。經典外觀保留，隨時切換
