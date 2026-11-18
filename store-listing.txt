@@ -1,0 +1,68 @@
+Minimalista: store listing, English (en-US), the default listing. Updated 16 November 2026.
+Limits: app name 30, short description 80, full description 4000, each Premium benefit 40 characters.
+
+App name: Minimalista: Calm Launcher
+Short description: A calm, focused home screen. Themes, wallpapers and Focus Mode to use less.
+Full description:
+Minimalista is a calm home screen for people who want to use their phone on purpose, not out of habit. Your apps sit in tidy folders, your day is clear at a glance, and nothing fights for your attention.
+
+━━━━━━━━━━━━━━━━━━━━
+THEMES, WALLPAPERS AND GLOW
+━━━━━━━━━━━━━━━━━━━━
+Make it yours in one tap, and change it any time.
+• 47 themes: whole new home designs, not just new colours
+• 32 wallpapers made for Minimalista, or your own photo
+• Glow: frosted glass and colours that follow your day
+• Essential Mode: just the time and a few apps as plain text
+
+━━━━━━━━━━━━━━━━━━━━
+SEE WHERE YOUR TIME GOES
+━━━━━━━━━━━━━━━━━━━━
+• Focus Score: today compared with your usual day, from screen time, unlocks and focus sessions
+• Your week: score, screen time, late nights and your calmest day, in plain words, with a card to share
+• Worked out on your phone, never uploaded
+
+━━━━━━━━━━━━━━━━━━━━
+FOCUS AND USE YOUR PHONE ON PURPOSE
+━━━━━━━━━━━━━━━━━━━━
+• Focus Mode: only the apps you choose stay usable
+• Mindful open: pick a reason before a distracting app starts
+• Scroll break: a calm breath when you keep reopening an app
+• Daily limits: a gentle pause when today's time for an app is up
+
+━━━━━━━━━━━━━━━━━━━━
+LESS NOISE, MORE FLOW
+━━━━━━━━━━━━━━━━━━━━
+• Calm digest: notifications wait for your times, and you can reply right there
+• Routines: focus, silence, held notifications, music or an app, in one tap
+• Driving: big music controls, maps and calling when your car connects; notifications wait until you park
+
+━━━━━━━━━━━━━━━━━━━━
+A CALMER HOME SCREEN
+━━━━━━━━━━━━━━━━━━━━
+• Folders or plain titles, and every app one swipe up
+• Letter scroll: slide down the A to Z to jump to any app, with a soft click
+• A see-through All apps screen over your blurred home
+• Clock, date, weather, Focus Score and progress rings at a glance
+• One search for apps, contacts and the web, with a calculator and voice
+• Widgets in three styles: frosted glass, instrument panel or warm retro. Clocks, weather, screen time, calendar, tasks, notes, habits, focus timer and any Android widget
+• Colours, ten clock faces, monochrome icons and fonts
+
+━━━━━━━━━━━━━━━━━━━━
+FREE, WITH PREMIUM TO TRY
+━━━━━━━━━━━━━━━━━━━━
+Minimalista and the Classic look are free. Every new install starts with 7 days of Premium: no card, nothing to cancel. Premium adds themes, wallpapers, Glow, Essential Mode, the widget board, customisation, Mindful open, Scroll break, daily limits, Calm digest, Routines and Driving. Choose a yearly plan or a one-time lifetime purchase; cancel subscriptions anytime in Google Play.
+
+━━━━━━━━━━━━━━━━━━━━
+PRIVATE BY DESIGN
+━━━━━━━━━━━━━━━━━━━━
+No accounts, no ads, no servers of our own. Your notes, contacts, notifications, Focus Score and rhythm never leave your phone. Weather comes from Open-Meteo; anonymous crash reports and feature counts help us improve, and you can turn the statistics off. Every permission is optional and tied to one feature.
+
+Available in 19 languages.
+
+Privacy policy: https://razianaushin1-droid.github.io/Minimalista-Launcher/
+Premium benefits:
+• All themes, wallpapers and Glow
+• Essential Mode and the widget board
+• Mindful open, Scroll break, limits
+• Calm digest, Routines and Driving
