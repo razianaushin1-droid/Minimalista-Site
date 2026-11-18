@@ -1,0 +1,133 @@
+<en-US>
+• New Essential Mode (Premium): just the time and a few apps as plain text, plus an A–Z list
+• New Time budget (Premium): one daily allowance for your time-sink apps, with a ring on home
+• New Grayscale at night (Premium): the launcher fades to black and white from a time you choose
+• Share a picture of your calm home, never your app names
+• More rings fit in a tidy row, the Focus Score learns your day, and many small fixes
+</en-US>
+<ar>
+• جديد: الوضع الأساسي (Premium): الوقت وبعض التطبيقات كنص فقط، مع قائمة من الألف إلى الياء
+• جديد: ميزانية الوقت (Premium): حصة يومية واحدة للتطبيقات التي تستهلك وقتك، مع حلقة على الشاشة الرئيسية
+• جديد: الأبيض والأسود ليلًا (Premium): تتحول الواجهة إلى الأبيض والأسود من وقت تختاره
+• شارك صورة لشاشتك الهادئة، دون أسماء تطبيقاتك أبدًا
+• حلقات أكثر في صف مرتب، ودرجة التركيز تتعلم يومك، وإصلاحات صغيرة كثيرة
+</ar>
+<de-DE>
+• Neu: Essential-Modus (Premium): nur die Uhrzeit und ein paar Apps als Text, dazu eine A–Z-Liste
+• Neu: Zeitbudget (Premium): ein Tageskontingent für deine Zeitfresser-Apps, mit Ring auf dem Startbildschirm
+• Neu: Graustufen am Abend (Premium): ab einer Uhrzeit deiner Wahl wird alles schwarz-weiß
+• Teile ein Bild deines ruhigen Startbildschirms, ohne App-Namen
+• Mehr Ringe in einer Reihe, der Fokus-Wert lernt deinen Tag, viele kleine Fixes
+</de-DE>
+<es-ES>
+• Nuevo Modo esencial (Premium): solo la hora y algunas apps en texto, con lista de la A a la Z
+• Nuevo Presupuesto de tiempo (Premium): un límite diario para tus apps que más tiempo roban, con un anillo en inicio
+• Nueva Escala de grises de noche (Premium): todo pasa a blanco y negro desde la hora que elijas
+• Comparte una imagen de tu inicio tranquilo, sin nombres de apps
+• Más anillos en una fila ordenada, la Puntuación de enfoque aprende tu día y muchas mejoras
+</es-ES>
+<fr-FR>
+• Nouveau : Mode essentiel (Premium) : l'heure et quelques apps en texte, avec une liste de A à Z
+• Nouveau : Budget temps (Premium) : un quota quotidien pour vos apps chronophages, avec un anneau sur l'accueil
+• Nouveau : Niveaux de gris le soir (Premium) : tout passe en noir et blanc à l'heure choisie
+• Partagez une image de votre accueil apaisé, sans noms d'apps
+• Plus d'anneaux sur une ligne, le score de concentration apprend votre journée, et des correctifs
+</fr-FR>
+<hi-IN>
+• नया एसेंशियल मोड (Premium): सिर्फ़ समय और कुछ ऐप्स टेक्स्ट में, साथ में A–Z सूची
+• नया टाइम बजट (Premium): समय खाने वाले ऐप्स के लिए एक रोज़ाना सीमा, होम पर रिंग के साथ
+• नया रात में ग्रेस्केल (Premium): आपके चुने समय से लॉन्चर ब्लैक एंड व्हाइट हो जाता है
+• अपनी शांत होम स्क्रीन की तस्वीर शेयर करें, ऐप के नाम कभी नहीं
+• ज़्यादा रिंग एक पंक्ति में, फ़ोकस स्कोर आपका दिन सीखता है, और कई छोटे सुधार
+</hi-IN>
+<id>
+• Baru: Mode Esensial (Premium): hanya jam dan beberapa aplikasi berupa teks, plus daftar A–Z
+• Baru: Anggaran waktu (Premium): satu jatah harian untuk aplikasi penyita waktu, dengan cincin di layar utama
+• Baru: Skala abu-abu malam hari (Premium): launcher memudar jadi hitam putih mulai jam pilihanmu
+• Bagikan gambar layar utamamu yang tenang, tanpa nama aplikasi
+• Lebih banyak cincin dalam satu baris, Skor Fokus mempelajari harimu, dan banyak perbaikan kecil
+</id>
+<it-IT>
+• Nuova Modalità essenziale (Premium): solo l'ora e poche app in testo, con elenco dalla A alla Z
+• Nuovo Budget di tempo (Premium): un tetto giornaliero per le app che rubano tempo, con un anello nella home
+• Nuova Scala di grigi la sera (Premium): tutto diventa bianco e nero dall'ora che scegli
+• Condividi un'immagine della tua home tranquilla, mai i nomi delle app
+• Più anelli in una riga ordinata, il Punteggio Focus impara la tua giornata e tante piccole correzioni
+</it-IT>
+<ja-JP>
+• 新機能 エッセンシャルモード（Premium）：時刻といくつかのアプリを文字だけで表示、A–Zリスト付き
+• 新機能 時間予算（Premium）：時間を奪うアプリに1日1つの持ち時間、ホームにリング表示
+• 新機能 夜はモノクロに（Premium）：選んだ時刻からランチャーが白黒に
+• 落ち着いたホーム画面の画像を共有（アプリ名は表示されません）
+• リングを横一列に整理、フォーカススコアがあなたの一日を学習、細かな改善多数
+</ja-JP>
+<ko-KR>
+• 새 기능 에센셜 모드(Premium): 시간과 몇 개의 앱만 텍스트로, A–Z 목록 포함
+• 새 기능 시간 예산(Premium): 시간을 잡아먹는 앱에 하루 한도 하나, 홈 화면에 링 표시
+• 새 기능 밤에는 흑백으로(Premium): 정한 시간부터 런처가 흑백으로 바뀝니다
+• 차분한 홈 화면 이미지를 공유하세요. 앱 이름은 보이지 않습니다
+• 더 많은 링을 한 줄로 정리, 집중 점수가 하루를 학습, 여러 작은 개선
+</ko-KR>
+<nl-NL>
+• Nieuw: Essentiële modus (Premium): alleen de tijd en een paar apps als tekst, plus een A–Z-lijst
+• Nieuw: Tijdsbudget (Premium): één dagelijks tegoed voor je tijdvretende apps, met een ring op het startscherm
+• Nieuw: Grijstinten in de avond (Premium): vanaf een tijd naar keuze wordt alles zwart-wit
+• Deel een afbeelding van je rustige startscherm, zonder app-namen
+• Meer ringen netjes op een rij, de Focusscore leert je dag kennen, en veel kleine fixes
+</nl-NL>
+<pl-PL>
+• Nowość: Tryb Essential (Premium): tylko godzina i kilka aplikacji jako tekst, plus lista A–Z
+• Nowość: Budżet czasu (Premium): jeden dzienny limit dla aplikacji, które zjadają czas, z pierścieniem na ekranie
+• Nowość: Skala szarości wieczorem (Premium): od wybranej godziny wszystko staje się czarno-białe
+• Udostępnij obraz swojego spokojnego ekranu, bez nazw aplikacji
+• Więcej pierścieni w jednym rzędzie, Wynik skupienia uczy się Twojego dnia, wiele drobnych poprawek
+</pl-PL>
+<pt-BR>
+• Novo Modo essencial (Premium): só a hora e alguns apps em texto, com lista de A a Z
+• Novo Orçamento de tempo (Premium): um limite diário para os apps que roubam seu tempo, com anel na tela inicial
+• Novo Tons de cinza à noite (Premium): tudo fica preto e branco a partir do horário que você escolher
+• Compartilhe uma imagem da sua tela inicial tranquila, sem nomes de apps
+• Mais anéis em uma fileira, a Pontuação de foco aprende seu dia e muitas pequenas correções
+</pt-BR>
+<ru-RU>
+• Новый режим Essential (Premium): только время и несколько приложений текстом, плюс список от А до Я
+• Новый лимит времени (Premium): один дневной лимит на приложения-пожиратели времени, с кольцом на главном экране
+• Новое: Ч/б вечером (Premium): с выбранного часа всё становится чёрно-белым
+• Делитесь картинкой спокойного главного экрана без названий приложений
+• Больше колец в один ряд, оценка фокуса учится вашему дню, много мелких исправлений
+</ru-RU>
+<tr-TR>
+• Yeni Temel Mod (Premium): yalnızca saat ve birkaç uygulama metin olarak, artı A–Z listesi
+• Yeni Zaman bütçesi (Premium): vakit yiyen uygulamalar için tek bir günlük hak, ana ekranda halka ile
+• Yeni Gece gri tonlama (Premium): seçtiğiniz saatten itibaren her şey siyah beyaz olur
+• Sakin ana ekranınızın görselini paylaşın, uygulama adları asla görünmez
+• Daha fazla halka tek sırada, Odak Puanı gününüzü öğrenir, birçok küçük düzeltme
+</tr-TR>
+<uk>
+• Новий режим Essential (Premium): лише час і кілька застосунків текстом, плюс список від А до Я
+• Новий ліміт часу (Premium): один денний ліміт для застосунків, що крадуть час, з кільцем на головному екрані
+• Нове: Ч/б увечері (Premium): з обраної години все стає чорно-білим
+• Діліться зображенням спокійного головного екрана без назв застосунків
+• Більше кілець в один ряд, оцінка фокусу вивчає ваш день, багато дрібних виправлень
+</uk>
+<vi>
+• Mới: Chế độ thiết yếu (Premium): chỉ giờ và vài ứng dụng dạng chữ, kèm danh sách A–Z
+• Mới: Ngân sách thời gian (Premium): một hạn mức mỗi ngày cho các ứng dụng ngốn thời gian, có vòng trên màn hình chính
+• Mới: Trắng đen vào ban đêm (Premium): từ giờ bạn chọn, launcher chuyển sang đen trắng
+• Chia sẻ hình màn hình chính yên tĩnh của bạn, không lộ tên ứng dụng
+• Nhiều vòng hơn trên một hàng, Điểm tập trung học ngày của bạn, cùng nhiều sửa lỗi nhỏ
+</vi>
+<zh-CN>
+• 新增精简模式（Premium）：只显示时间和几个文字应用，另有 A–Z 列表
+• 新增时间预算（Premium）：为耗时应用设定一个每日额度，主屏显示圆环
+• 新增夜间灰度（Premium）：从你选择的时间起，启动器渐变为黑白
+• 分享一张安静主屏的图片，绝不显示应用名称
+• 更多圆环整齐排成一行，专注分数会学习你的作息，以及多项小修复
+</zh-CN>
+<zh-TW>
+• 新增精簡模式（Premium）：只顯示時間和幾個文字應用程式，另有 A–Z 列表
+• 新增時間預算（Premium）：為耗時的應用程式設定一個每日額度，主畫面顯示圓環
+• 新增夜間灰階（Premium）：從你選擇的時間起，啟動器漸變為黑白
+• 分享一張安靜主畫面的圖片，絕不顯示應用程式名稱
+• 更多圓環整齊排成一行，專注分數會學習你的作息，以及多項小修正
+</zh-TW>

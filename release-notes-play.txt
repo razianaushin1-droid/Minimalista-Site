@@ -1,0 +1,133 @@
+<en-US>
+• Smoother swipe up: the whole home rises with your finger as All apps slides in
+• Folders open in a popup; drag apps to reorder or remove them from a folder
+• Glow: drag to reorder the clock, date line and rings; centred category titles
+• Clearer Premium screen with local prices and an easy Close button
+• Full-screen display and support for Android 17
+</en-US>
+<ar>
+• سحب لأعلى أكثر سلاسة: ترتفع الشاشة الرئيسية بالكامل مع إصبعك بينما تظهر كل التطبيقات
+• تُفتح المجلدات في نافذة منبثقة؛ اسحب التطبيقات لإعادة ترتيبها أو أزلها من المجلد
+• Glow: اسحب لإعادة ترتيب الساعة وسطر التاريخ والحلقات؛ عناوين فئات في المنتصف
+• شاشة Premium أوضح بأسعار محلية وزر إغلاق سهل
+• عرض بملء الشاشة ودعم Android 17
+</ar>
+<de-DE>
+• Flüssigeres Wischen nach oben: Der ganze Startbildschirm folgt deinem Finger, während alle Apps hereingleiten
+• Ordner öffnen sich als Pop-up; Apps per Ziehen neu ordnen oder aus dem Ordner entfernen
+• Glow: Uhr, Datumszeile und Ringe per Ziehen anordnen; zentrierte Kategorietitel
+• Übersichtlicherer Premium-Bildschirm mit lokalen Preisen und gut sichtbarem Schließen-Button
+• Vollbildanzeige und Unterstützung für Android 17
+</de-DE>
+<es-ES>
+• Deslizar hacia arriba más fluido: toda la pantalla de inicio sube con tu dedo mientras aparecen todas las apps
+• Las carpetas se abren en una ventana emergente; arrastra apps para reordenarlas o quitarlas
+• Glow: arrastra para reordenar el reloj, la línea de fecha y los anillos; títulos de categorías centrados
+• Pantalla Premium más clara, con precios locales y un botón Cerrar fácil de ver
+• Pantalla completa y compatibilidad con Android 17
+</es-ES>
+<fr-FR>
+• Balayage vers le haut plus fluide : tout l'écran d'accueil suit votre doigt pendant que toutes les apps apparaissent
+• Les dossiers s'ouvrent dans une fenêtre ; faites glisser les apps pour les réorganiser ou les retirer
+• Glow : réorganisez l'horloge, la ligne de date et les anneaux par glisser-déposer ; titres de catégories centrés
+• Écran Premium plus clair, avec prix locaux et bouton Fermer bien visible
+• Affichage plein écran et prise en charge d'Android 17
+</fr-FR>
+<hi-IN>
+• ऊपर स्वाइप करना अब और स्मूद: सभी ऐप्स आते समय पूरी होम स्क्रीन आपकी उंगली के साथ ऊपर उठती है
+• फ़ोल्डर पॉपअप में खुलते हैं; ऐप्स को खींचकर क्रम बदलें या फ़ोल्डर से हटाएँ
+• Glow: घड़ी, तारीख वाली लाइन और रिंग्स को खींचकर क्रम बदलें; श्रेणियों के नाम बीच में
+• लोकल कीमतों और आसान बंद करें बटन के साथ साफ़ Premium स्क्रीन
+• फ़ुल-स्क्रीन डिस्प्ले और Android 17 सपोर्ट
+</hi-IN>
+<id>
+• Geser ke atas lebih mulus: seluruh layar utama naik mengikuti jarimu saat semua aplikasi muncul
+• Folder terbuka sebagai pop-up; seret aplikasi untuk mengurutkan ulang atau menghapusnya dari folder
+• Glow: seret untuk mengatur jam, baris tanggal, dan cincin; judul kategori di tengah
+• Layar Premium lebih jelas dengan harga lokal dan tombol Tutup yang mudah
+• Tampilan layar penuh dan dukungan Android 17
+</id>
+<it-IT>
+• Scorrimento verso l'alto più fluido: tutta la home sale con il dito mentre appaiono tutte le app
+• Le cartelle si aprono in un popup; trascina le app per riordinarle o rimuoverle dalla cartella
+• Glow: trascina per riordinare orologio, riga della data e anelli; titoli delle categorie centrati
+• Schermata Premium più chiara, con prezzi locali e un pulsante Chiudi ben visibile
+• Visualizzazione a schermo intero e supporto per Android 17
+</it-IT>
+<ja-JP>
+• 上スワイプがさらに滑らかに：すべてのアプリが現れる間、ホーム画面全体が指に合わせて上がります
+• フォルダはポップアップで開き、アプリをドラッグして並べ替えやフォルダからの削除ができます
+• Glow：時計、日付の行、リングをドラッグで並べ替え可能に。カテゴリ名は中央に表示
+• 現地価格と分かりやすい「閉じる」ボタンで、Premium画面がより見やすく
+• フルスクリーン表示とAndroid 17に対応
+</ja-JP>
+<ko-KR>
+• 더 부드러운 위로 스와이프: 모든 앱이 나타나는 동안 홈 화면 전체가 손가락을 따라 올라갑니다
+• 폴더가 팝업으로 열리며, 앱을 드래그해 순서를 바꾸거나 폴더에서 뺄 수 있어요
+• Glow: 시계, 날짜 줄, 링을 드래그해 순서 변경; 카테고리 제목은 가운데 정렬
+• 현지 가격과 찾기 쉬운 닫기 버튼으로 더 깔끔해진 Premium 화면
+• 전체 화면 표시 및 Android 17 지원
+</ko-KR>
+<nl-NL>
+• Soepeler omhoog vegen: het hele startscherm beweegt mee met je vinger terwijl alle apps verschijnen
+• Mappen openen in een pop-up; sleep apps om ze te herschikken of uit de map te halen
+• Glow: sleep om de klok, de datumregel en de ringen te herschikken; gecentreerde categorietitels
+• Duidelijker Premium-scherm met lokale prijzen en een goed zichtbare sluitknop
+• Volledig scherm en ondersteuning voor Android 17
+</nl-NL>
+<pl-PL>
+• Płynniejsze przesuwanie w górę: cały ekran główny unosi się za palcem, gdy pojawiają się wszystkie aplikacje
+• Foldery otwierają się w okienku; przeciągaj aplikacje, by zmienić kolejność lub usunąć je z folderu
+• Glow: przeciągaj, by zmienić kolejność zegara, linii z datą i pierścieni; wyśrodkowane nazwy kategorii
+• Czytelniejszy ekran Premium z lokalnymi cenami i wyraźnym przyciskiem Zamknij
+• Tryb pełnoekranowy i obsługa Androida 17
+</pl-PL>
+<pt-BR>
+• Deslizar para cima mais suave: toda a tela inicial sobe com o seu dedo enquanto todos os apps aparecem
+• As pastas abrem em um pop-up; arraste os apps para reordenar ou tirá-los da pasta
+• Glow: arraste para reordenar o relógio, a linha de data e os anéis; títulos de categorias centralizados
+• Tela Premium mais clara, com preços locais e um botão Fechar fácil de achar
+• Tela cheia e suporte ao Android 17
+</pt-BR>
+<ru-RU>
+• Более плавный свайп вверх: весь главный экран поднимается вслед за пальцем, пока появляются все приложения
+• Папки открываются во всплывающем окне; перетаскивайте приложения, чтобы менять порядок или убрать их из папки
+• Glow: меняйте порядок часов, строки даты и колец перетаскиванием; названия категорий по центру
+• Понятный экран Premium с местными ценами и заметной кнопкой «Закрыть»
+• Полноэкранный режим и поддержка Android 17
+</ru-RU>
+<tr-TR>
+• Daha akıcı yukarı kaydırma: tüm uygulamalar açılırken ana ekranın tamamı parmağınla birlikte yükselir
+• Klasörler açılır pencerede açılır; uygulamaları sürükleyerek sıralayın veya klasörden çıkarın
+• Glow: saati, tarih satırını ve halkaları sürükleyerek sıralayın; kategori başlıkları ortada
+• Yerel fiyatlar ve kolay bir Kapat düğmesiyle daha net Premium ekranı
+• Tam ekran görünüm ve Android 17 desteği
+</tr-TR>
+<uk>
+• Плавніший свайп угору: увесь головний екран піднімається за пальцем, поки з'являються всі програми
+• Папки відкриваються у спливному вікні; перетягуйте програми, щоб змінити порядок або прибрати їх із папки
+• Glow: змінюйте порядок годинника, рядка з датою та кілець перетягуванням; назви категорій по центру
+• Зрозуміліший екран Premium з місцевими цінами та помітною кнопкою «Закрити»
+• Повноекранний режим і підтримка Android 17
+</uk>
+<vi>
+• Vuốt lên mượt hơn: cả màn hình chính nâng lên theo ngón tay trong khi tất cả ứng dụng hiện ra
+• Thư mục mở dạng cửa sổ bật lên; kéo ứng dụng để sắp xếp lại hoặc xóa khỏi thư mục
+• Glow: kéo để sắp xếp đồng hồ, dòng ngày và các vòng; tiêu đề danh mục ở giữa
+• Màn hình Premium rõ ràng hơn với giá địa phương và nút Đóng dễ thấy
+• Hiển thị toàn màn hình và hỗ trợ Android 17
+</vi>
+<zh-CN>
+• 上滑更流畅：全部应用滑入时，整个主屏幕跟随手指上移
+• 文件夹以弹窗打开，可拖动应用调整顺序或移出文件夹
+• Glow：可拖动调整时钟、日期行和圆环的顺序；分类标题居中显示
+• Premium 页面更清晰，显示当地价格，关闭按钮醒目易找
+• 全屏显示，支持 Android 17
+</zh-CN>
+<zh-TW>
+• 上滑更流暢：全部 App 滑入時，整個主畫面跟著手指上移
+• 資料夾以彈出視窗開啟，可拖曳 App 調整順序或移出資料夾
+• Glow：可拖曳調整時鐘、日期列和圓環的順序；分類標題置中顯示
+• Premium 畫面更清楚，顯示當地價格，關閉按鈕醒目易找
+• 全螢幕顯示，支援 Android 17
+</zh-TW>
